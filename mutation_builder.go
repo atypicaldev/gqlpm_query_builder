@@ -11,9 +11,9 @@ import (
 const mutationTemplate = `
 {
 	set {
-{{range .Terms}}
+		{{range .Terms}}
 		<{{.Subject}}> <{{.Predicate}}> <{{.Value}}>
-{{end}}
+		{{end}}
 	}
 }
 `
